@@ -1,0 +1,24 @@
+package by.tms.myproject;
+
+public class Point {
+
+    private double x;
+    private double y;
+
+    public Point(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+    public double distance (Point a) {
+        double r = Math.sqrt((a.x - x) * (a.x - x) + (a.y -y) * (a.y -y));
+        return r;
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+}
